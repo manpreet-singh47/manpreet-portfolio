@@ -218,7 +218,7 @@ export default function ProjectsSection() {
         >
           {PROJECTS.map((project, index) => (
             <StackingCardItem
-              key={project.number}
+              key={project.title}
               index={index}
               className="h-[540px]"
               topPosition={`${4 + index * 2}%`}
