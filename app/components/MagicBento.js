@@ -103,20 +103,20 @@ function OpenToWork() {
 /* ─── Main export ─── */
 export const MagicBento = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-6 gap-3" style={{ gridAutoRows: "200px" }}>
+    <div className="grid grid-cols-1 md:grid-cols-6 gap-3 md:auto-rows-[200px]">
 
       {/* 1 — Experience: 2×2 tall left */}
       <motion.div
-        className="md:col-span-2 md:row-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col hover:border-zinc-700 transition-colors overflow-hidden"
+        className="md:col-span-2 md:row-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-5 sm:p-6 flex flex-col hover:border-zinc-700 transition-colors overflow-hidden"
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }} whileHover={{ scale: 1.02 }} transition={{ duration: 0.4 }}
       >
-        <div className="flex items-center justify-between mb-5">
+        <div className="flex items-center justify-between mb-4">
           <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-500">Experience</span>
           <span className="text-[10px] font-mono px-2 py-0.5 rounded-full border border-zinc-700 text-zinc-400">Stats</span>
         </div>
 
-        <div className="grid grid-cols-1 gap-2.5 flex-1">
+        <div className="grid grid-cols-1 gap-2 flex-1">
           <CounterBlock target={2} suffix="+ Yrs" label="Engineering Experience" />
           <CounterBlock target={8} suffix=" Apps" label="Shipped to Production" />
           <CounterBlock target={100} suffix="%" label="Mobile First" />
@@ -130,7 +130,7 @@ export const MagicBento = () => {
 
       {/* 2 — Core Stack: 2×1 top-middle */}
       <motion.div
-        className="md:col-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col hover:border-zinc-700 transition-colors overflow-hidden"
+        className="md:col-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-5 sm:p-6 flex flex-col hover:border-zinc-700 transition-colors overflow-hidden"
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }} transition={{ delay: 0.1, duration: 0.4 }} whileHover={{ scale: 0.98 }}
       >
@@ -158,7 +158,7 @@ export const MagicBento = () => {
 
       {/* 3 — Open to Work: 2×2 tall right */}
       <motion.div
-        className="md:col-span-2 md:row-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col hover:border-zinc-700 transition-colors overflow-hidden"
+        className="md:col-span-2 md:row-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-5 sm:p-6 flex flex-col hover:border-zinc-700 transition-colors overflow-hidden"
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }} transition={{ delay: 0.2, duration: 0.4 }} whileHover={{ scale: 1.02 }}
       >
@@ -167,7 +167,7 @@ export const MagicBento = () => {
 
       {/* 4 — Tooling: 2×1 bottom-middle */}
       <motion.div
-        className="md:col-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col hover:border-zinc-700 transition-colors overflow-hidden"
+        className="md:col-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-5 sm:p-6 flex flex-col hover:border-zinc-700 transition-colors overflow-hidden"
         initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }} transition={{ delay: 0.3, duration: 0.4 }} whileHover={{ scale: 0.98 }}
       >
